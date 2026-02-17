@@ -47,19 +47,74 @@ Tout simplement parcequ'un import ou un appel de composant pourra rendre le fich
 # Q7: Noter les nom des différents fichiers qui ont été générés par la commande.
 Réponse:
 
+    dist/about/index.html
+    dist/index.html
+    dist/assets/style-b4SyXn90.css
+    dist/assets/about-D08RWGIN.js
+    dist/assets/style-Dgd37vtf.js
+    dist/assets/main-QCVWN2m0.js
+
 # Q8 : Noter les nom des différents fichiers .js qui sont chargés au moment du chargement de la page.
 Réponse:
+
+- main-QCVWN2m0.js
+- style-Dgd37vtf.js
+- local-storage.js
+- util.js
+- fte-utils.js
+- express-fte.js
+- express-utils.js
+- FloatingActionButton.js
+- web-helper.ts-7cdc71d6.js
+- vendor.js
+- otherVendors.js
+- createLucideIcon-6676f207.js
+- check-user-limit-ded57423.js
+- jsx-runtime-4286988b.js
+- get-current-media-26ff6d59.js
+- browser-polyfill-45feeee0.js
+- firebase-997f25e3.js
+- use-form-4559cbed.js
+- get-user-config-c40076a6.js
+- index-cd77e154.js
+- js.js
+- dom.js
 
 # Q9 : Noter les nom des différents fichiers .js qui sont chargés au moment du changement de page.
 Réponse:
 
+- local-storage.js
+- util.js
+- about-D08RWGIN.js
+- fte-utils.js
+- express-fte.js
+- style-Dgd37vtf.js
+- express-utils.js
+- FloatingActionButton.js
+- web-helper.ts-7cdc71d6.js
+- vendor.js
+- otherVendors.js
+- createLucideIcon-6676f207.js
+- check-user-limit-ded57423.js
+- jsx-runtime-4286988b.js
+- get-current-media-26ff6d59.js
+- browser-polyfill-45feeee0.js
+- firebase-997f25e3.js
+- use-form-4559cbed.js
+- get-user-config-c40076a6.js
+- index-cd77e154.js
+- js.js
+- dom.js
+
 
 # Q10: Quel est l'intérêt de lu Code Splitting d'un point de vue éco-responsable ?
 Réponse:
+Le code splitting permet de charger uniquement le code nécessaire pour la page actuellement affichée, au lieu de charger toute l'application d'un seul coup.
 
 
 # Q11: Ajouter le screen de votre score :
 Screen:
+![alt text](image.png)
 
 
 # Q12:  Proposition 1
