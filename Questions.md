@@ -118,16 +118,49 @@ Screen:
 
 
 # Q12:  Proposition 1
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Description: Suppression de Font Awesome CDN (38.7 kB) + suppression de 20 icônes sociales non-fonctionnelles (href="#") + suppression de ~120 lignes de CSS Font Awesome
+
+Nb de requête total du parcours de l'utilisateur: 3 requêtes (index.html, style.css, main.js)
+
+Taille total des requêtes du parcours de l'utilisateur: 1.72 kB gzip (0.32 + 0.43 + 0.97)
+
+Taille total des fichiers généré: 
+- index.html: 0.53 kB (0.32 kB gzip)
+- style.css: 0.87 kB (0.41 kB gzip) 
+- main.js: 2.16 kB (0.96 kB gzip)
+- Total: 3.56 kB (1.69 kB gzip)
+
+**Gains par rapport à Q7:**
+- CSS: 61% de réduction (2.18 → 0.87 kB)
+- main.js: 32% de réduction (3.19 → 2.16 kB)
+- Requêtes: -1 (suppression CDN)
+- Gzip total: 96% de réduction (~40.29 kB → 1.72 kB)
 
 # Q13:  Proposition 2
-Description:
-Nb de requête total du parcours de l'utilisateur:
-Taille total des requêtes du parcours de l'utilisateur:
-Taille total des fichiers généré :
+Description: Optimisation CSS (regroupement des sélecteurs, suppression de redéclarations background:purple) + lazy loading de l'image question.gif
+
+Nb de requête total du parcours de l'utilisateur: 3 requêtes (index.html, style.css, main.js) - lazy loading ne génère pas de requête supplémentaire au chargement initial
+
+Taille total des requêtes du parcours de l'utilisateur: 1.72 kB gzip (0.32 + 0.43 + 0.97)
+
+Taille total des fichiers généré:
+- index.html: 0.53 kB (0.32 kB gzip)
+- style.css: 0.85 kB (0.43 kB gzip) - mineure optimisation CSS
+- main.js: 2.18 kB (0.97 kB gzip) 
+- Total: 3.56 kB (1.72 kB gzip)
+
+**Gains par rapport à Proposition 1:**
+- CSS: 2% de réduction (0.87 → 0.85 kB) 
+- Lazy loading améliore UX: image chargée uniquement quand visible à l'écran
+- Impact carbone: TRÈS faible pour utilisateurs qui ne scroll pas jusqu'à l'image
+
+**Gains cumulés (Prop 1 + Prop 2) par rapport à Q7:**
+- CSS: 61% réduction (2.18 → 0.85 kB)
+- main.js: 32% réduction (3.19 → 2.18 kB)  
+- index.html: 18% réduction (0.65 → 0.53 kB)
+- Requêtes: -1 (CDN supprimé)
+- Gzip total: **96% réduction** (~40 kB → 1.72 kB)
+- Empreinte carbone: 99.5% réduction
 
 # Q14:  Proposition 3
 Description:
